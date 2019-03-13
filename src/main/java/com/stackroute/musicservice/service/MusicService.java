@@ -12,10 +12,15 @@ import java.util.Optional;
 public interface MusicService {
 
     Music saveMusic(Music music) throws MusicAlreadyExistsException;
+
     List<Music> getAllMusic();
+
     Optional<Music> getMusicById(int trackid);
+
     Music updateMusic(Music music, int trackid);
+
     void deleteMusicById(int trackid);
-    List<Music> findbyName(String Name)throws MusicNotFoundException;
+
+    List<Music> findbyName(String Name) throws MusicNotFoundException;
 
 }

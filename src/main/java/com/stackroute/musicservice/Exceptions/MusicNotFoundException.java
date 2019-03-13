@@ -1,10 +1,15 @@
 package com.stackroute.musicservice.Exceptions;
 
-public class MusicNotFoundException extends Exception{
+/*Create custom exceptions Track/Music NotFoundException, Track/Music AlreadyExistsException in a com.stack....exceptions package.
+ Perform appropriate exception handling and propagation back.*/
+public class MusicNotFoundException extends Exception {
     private String message;
-    public MusicNotFoundException(){}
-    public MusicNotFoundException(String message){
+
+    public MusicNotFoundException() {
+    }
+
+    public MusicNotFoundException(String message) {
         super(message);
-        this.message =message;
+        this.message = message;
     }
 }
