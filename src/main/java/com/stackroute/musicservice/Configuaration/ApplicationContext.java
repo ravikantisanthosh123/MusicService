@@ -10,8 +10,8 @@ import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 /* *Running Logic on Startup in Spring. Create seed data to pre-fill the database with music information whenever the application starts.
         * Use both approaches:
-            Approach 1: ApplicationListener<ContextRefreshedEvent>
-            Approach 2: CommandLineRunner (Find out how it differs from ApplicationRunner)
+            Approach-1: ApplicationListener<ContextRefreshedEvent>
+            Approach-2: CommandLineRunner (Find out how it differs from ApplicationRunner)
     *Remove all hard coded data from the application code to application.properties
     a)by using @Value.
     b)by using @PropertySource
